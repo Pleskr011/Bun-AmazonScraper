@@ -40,7 +40,9 @@ The Amazon-scraper manages to access Amazon with only axios and a User-Agent. Si
 
 <h3>Points of interest:</h3>
 - The userController.ts file in the Amazon-scraper/controllers/ folder. Contains all the logic for the scraping process.
+
 - The products.js file in the frontend/src/ folder. It has the logic to receive and process the resulting scraping data from the backend to the frontend user.
+
 - It has a dark mode/light mode depending on your browser configuration.
 
 <h1>IMPROVEMENTS FOR THE FUTURE</h1>
