@@ -38,10 +38,12 @@ Try to search something and look at the results! C:
 The Amazon-scraper manages to access Amazon with only axios and a User-Agent. Since there is no proxy or - more important - a browser automation library (Selenium, Puppeteer...) this scrape tool could be banned by Amazon with a few uses (which you can workaround with a VPN, but not ideal). Still, really useful to learn from it, and can be of benefit for some use cases.
 
 <h4>Points of interest:</h4>
+
     - The userController.ts file in the Amazon-scraper/controllers/ folder. Contains all the logic for the scraping process.
     - The products.js file in the frontend/src/ folder. It has the logic to receive and process the resulting scraping data from the backend to the frontend user.
     - It has a dark mode/light mode depending on your browser configuration.
 
 <h1>IMPROVEMENTS FOR THE FUTURE</h1>
+
     - Solve the "Could not find a declaration file for module" errors. It needs to install types dependencies for express and jsdom.
     - Add prices and URL to the received product listing.
