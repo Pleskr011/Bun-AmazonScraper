@@ -1,0 +1,176 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  --color-text: #213547;
+  --color-background: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body { 
+  margin: 0; 
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+}
+
+img {
+  height: 10em;
+  padding: 0.5em;
+}
+
+.logo {
+  height: 2.5em;
+  padding: 0em;
+}
+
+.card {
+  padding: 2em;
+  position: relative;
+  right: -1.3em;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  border-top:#d5a051 solid 1px;
+  width: 98.5%;
+}
+
+.footer-text {
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer-text::before {
+  content: url('/github-mark.svg');
+  height: 2.5em;
+  padding: 0em;
+  display: inline-flex;
+}
+
+a {
+  text-decoration: none;
+  color:#464646;
+}
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  right: 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s;
+  font-size: 16px;
+  background-color: white;
+  color: #333;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+.search-icon {
+  position: absolute;
+  right: -45px;
+  top: 3%;
+  font-size: 20px;
+  pointer-events: none; 
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ebb059;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #575a87;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  gap: 50px;
+  margin: 50px 50px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  gap: 5px;
+}
+
+.product-meta {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #ffffff; 
+    --color-background: #213547;; 
+  }
+
+  button {
+    background-color: #daa453;
+  }
+
+  button:hover {
+    border-color: #8a90d8;
+  }
+
+  a {
+    color: #ffffff;
+  }
+
+  .footer-text::before {
+    content: url('/github-mark-white.svg');
+  }
+}
